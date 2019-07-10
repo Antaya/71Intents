@@ -9,20 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EveningActivity"
-            android:label="@string/title_activity_evening"
-            >
+        <activity android:name=".EveningActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SYNC"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:scheme="http" android:host="afternoon"/>
+                <data android:scheme="http" android:host="evening"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".AfternoonActivity"
-            android:label="@string/title_activity_afternoon"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".AfternoonActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SYNC"/>
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -32,9 +28,7 @@
         </activity>
 
         <activity
-            android:name=".MorningActivity"
-            android:label="@string/title_activity_morning"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".MorningActivity">
         <intent-filter>
             <action android:name="android.intent.action.SYNC"/>
             <category android:name="android.intent.category.DEFAULT"/>
