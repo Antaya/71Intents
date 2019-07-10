@@ -5,19 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.view.View;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity {
     private String currentTime;
-    private int hour;
-    private String choiceUri;
+
 
 
     @Override
